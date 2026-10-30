@@ -12,21 +12,21 @@
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 </p>
 
-## 📌 About this project
+##  About this project
 
 This project was built for the **Continuous Integration and Delivery** course at FCSE (FINKI), Skopje. It's a simple full-stack CRUD application with a React frontend, a Node.js/Express backend and a PostgreSQL database. The app itself is intentionally simple: the focus is on the DevOps work around it.
 
 The application runs in two ways:
 
-- 🐳 **Docker Compose:** the whole stack runs locally with a single command
-- ☸️ **Kubernetes:** the stack is deployed to a local k3d cluster with a namespace, ConfigMap, Secret, a PostgreSQL StatefulSet, Deployments for the frontend and backend, Ingress routing, and a middleware that applies the CORS policy
+-  **Docker Compose:** the whole stack runs locally with a single command
+-  **Kubernetes:** the stack is deployed to a local k3d cluster with a namespace, ConfigMap, Secret, a PostgreSQL StatefulSet, Deployments for the frontend and backend, Ingress routing, and a middleware that applies the CORS policy
 
 It also contains a CI pipeline:
 
-- 🔄 **CI pipeline:** every push triggers a GitHub Actions workflow that builds the Docker images and publishes them to Docker Hub
+-  **CI pipeline:** every push triggers a GitHub Actions workflow that builds the Docker images and publishes them to Docker Hub
 
 
-## 🧰 Tech stack
+##  Tech stack
 
 | Area | Technologies |
 |---|---|
@@ -35,11 +35,11 @@ It also contains a CI pipeline:
 | Orchestration | Kubernetes (k3d), kubectl |
 | Application | React, Node.js/Express, PostgreSQL |
 
-## ⚙️ Setup
+##  Setup
 
 Make sure you have **Docker Desktop** installed and running, and **k3d** and **kubectl** installed. Ports **3000**, **3001**, **3100** and **3101** must be free.
 
-## 🐳 Dockerization
+##  Dockerization
 
 1. At the project's root, run:
 
@@ -65,7 +65,7 @@ Make sure you have **Docker Desktop** installed and running, and **k3d** and **k
    docker compose down
    ```
 
-## 🔄 CI Pipeline
+##  CI Pipeline
 
 1. After cloning the repository, remove the pre-existing remote with:
 
@@ -92,7 +92,7 @@ Make sure you have **Docker Desktop** installed and running, and **k3d** and **k
 
 4. Make a small change somewhere in the code or the README, then commit and push it to your repository. Right after that, open the **Actions** tab of your repository and watch the pipeline run. You can also check your Docker Hub repository to see the newly built images.
 
-## ☸️ Kubernetes deployment
+##  Kubernetes deployment
 
 1. First, create a cluster:
 
@@ -145,7 +145,7 @@ For a backend health check, use:
 http://localhost:3101/health
 ```
 
-## 📂 Project structure
+##  Project structure
 
 ```
 .
